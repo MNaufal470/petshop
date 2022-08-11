@@ -1,0 +1,13 @@
+Nama : Muhammad Naufal Sabarrudin
+Kelas : 4IA19
+NPM : 54418780
+
+Cara Menjalankan Aplikasi Petshopqu
+1.Import database dengan nama petshop.
+2.jalankan dengan menggunakan development server php spark serve
+3.login akun :
+	member : username = member
+		 password = member
+ 
+	admin: username = admin
+		 password = admin

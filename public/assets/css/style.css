@@ -1,0 +1,504 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-family: "Fredoka One", cursive;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.login {
+  min-height: 100vh;
+  width: 100%;
+  /* background-color: #232121; */
+  background: url(//cdn.shopify.com/s/files/1/0641/5187/9935/files/pattern-bg.png?v=1651480415)
+    center top no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.loginPage {
+  width: 50%;
+  padding: 50px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  border-radius: 10px;
+  background: #232121;
+  align-items: center;
+}
+.titleLogin {
+  font-family: "Fredoka One", cursive;
+  color: #ffc312;
+  text-align: center;
+  letter-spacing: 0.2rem;
+}
+.textLogo > p {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0;
+  font-size: 14px;
+  padding: 0 20px;
+}
+
+.inputLogin {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #ffc312;
+  outline: none;
+  padding-bottom: 10px;
+  width: 100%;
+  color: #fff;
+}
+.btnLogin {
+  background-color: #ffc312;
+  width: 100%;
+  font-family: "Fredoka One", cursive;
+  font-size: 20px;
+}
+.btnRegist {
+  color: white;
+  opacity: 0.8;
+}
+.ulLogin {
+  list-style: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  column-gap: 1rem;
+}
+.iconSocial {
+  font-size: 1rem;
+}
+.bg-yellow {
+  background-color: #f3da0a;
+}
+.logoutIcon {
+  display: flex;
+  align-items: center;
+  column-gap: 0.3rem;
+  text-decoration: none;
+  color: black;
+  font-family: "Fredoka One", cursive;
+}
+.text-2xl {
+  font-size: 1.15rem;
+}
+.justifyBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+.nav-link {
+  font-size: 1.15rem;
+}
+.gap-x-2{
+  column-gap: 0.25rem;
+}
+.listNavbar {
+  display: flex;
+  align-items: center;
+  column-gap: 3rem;
+}
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.nav-absolute {
+  position: fixed;
+  top: 0;
+}
+/* Home */
+.container-banner {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.text-container {
+  width: 400px;
+  position: relative;
+  z-index: 2;
+  margin-right: 30px;
+}
+.text-container > h1 {
+  font-size: 76px;
+  font-family: "Fredoka One", cursive;
+  line-height: 1;
+}
+.text-container > p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  margin: 40px 0;
+}
+.btnBuy {
+  text-transform: uppercase;
+  font-size: 16px;
+  background-color: #ff6b35;
+  color: white;
+  padding: 10px 40px;
+  border-radius: 30px;
+}
+.banner {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+}
+.banner > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bg-transparent {
+  background: transparent;
+}
+.container-discount {
+  width: 100%;
+  height: 400px;
+  background: url("https://cdn.shopify.com/s/files/1/0641/5187/9935/files/pattern-bg.png?v=1651480415");
+  margin-top: -200px;
+  padding-top: 200px;
+}
+.discountContent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+}
+.items-content-l {
+  background: url("//cdn.shopify.com/s/files/1/0641/5187/9935/files/grid01.png?v=1653393298");
+  width: 100%;
+  height: 450px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.items-content-2 {
+  background: url("//cdn.shopify.com/s/files/1/0641/5187/9935/files/grid02.png?v=1653393316");
+  width: 100%;
+  height: 450px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.titleContent {
+  position: absolute;
+  right: 50px;
+  top: 40%;
+  transform: translateY(-50%);
+}
+.titleContent > h1,
+.titleContent-r > h1 {
+  font-family: "Fredoka One", cursive;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+.titleContent-r {
+  position: absolute;
+  left: 50px;
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+/* product */
+.productContainer {
+  margin-top: 300px;
+}
+.productContent {
+  display: flex;
+  column-gap: 2rem;
+  margin: 0 40px;
+  margin-top: 30px;
+}
+.advert > img {
+  width: 300px;
+  height: 100%;
+}
+.listProduct {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3rem;
+  row-gap: 3rem;
+}
+.productSales {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid #ececec;
+  background-color: #ffc312;
+  cursor: pointer;
+}
+.productSales > img {
+  width: 100%;
+  transition: ease-in-out 0.5s;
+}
+.productSales img:hover {
+  transform: scale(0.9);
+  border-radius: 20px;
+}
+.productDesc {
+  text-align: center;
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+.productDesc > h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.scroll-header {
+  background: #ffc312 !important;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  background-color: #232121;
+  margin-top: 200px;
+}
+.footerContent {
+  display: flex;
+  column-gap: 10rem;
+}
+.footerDesc {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.footerDesc > span {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+.ul-social {
+  list-style: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  column-gap: 1rem;
+}
+.ul-social .iconSocial {
+  font-size: 1.35rem;
+}
+.subscribe {
+  width: 350px;
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+  border-bottom: 3px solid #ececec;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 10px;
+  font-size: 1.15rem;
+}
+.footerItem-r > label {
+  color: white;
+  margin-top: 5px;
+  font-family: "Montserrat", sans-serif;
+}
+.subscribeForm {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+.subscribeForm > button {
+  background: none;
+  border: none;
+  outline: none;
+  font-family: "Fredoka One", cursive;
+  font-size: 30px;
+  color: #f3da0a;
+  padding-top: 10px;
+}
+.useContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 5rem;
+}
+.useItem > span {
+  color: #ffc312;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+.ulUse {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+.ulUse > li {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.15rem;
+}
+.copyright {
+  color: white;
+  margin-top: 40px;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #ececec;
+  font-size: 1.25rem;
+  font-family: "Montserrat", sans-serif;
+}
+/*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+  width: 0.4rem;
+  background: #232121;
+  z-index: 1;
+  position: relative;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffc312;
+  border-radius: 0.5rem;
+}
+
+/* Detail */
+.scrumb {
+  width: 100%;
+  height: 300px;
+  background: url("https://cdn.shopify.com/s/files/1/0641/5187/9935/files/pattern-bg.png?v=1651480415");
+}
+.scrumb-container{
+  width: 100%;
+  height: 300px;
+}
+.scrumbItem {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 30px;
+}
+.scrumbItem > h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.scrumbItem > span {
+  font-size: 1.15rem;
+  font-family: "Montserrat", sans-serif;
+}
+.detailContent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 4rem;
+}
+.productDetail {
+  margin-top: 80px;
+}
+.detailContent > img {
+  border-radius: 20px;
+  width: 100%;
+}
+.detailSpec {
+  font-size: 1.15rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Checkout */
+.gapCol{
+  column-gap: 1rem;
+}
+.productCheckout{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+.box-shadow{
+  -webkit-box-shadow: 10px 10px 5px 0px #ffc312;
+  -moz-box-shadow: 10px 10px 5px 0px #ffc312;
+  box-shadow: 10px 10px 5px 0px #ffc312;
+}
+.titleAddress{
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.bg-gray{
+  border-radius: 20px;
+}
+.productCheckoutDetail>img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.productCheckoutDetail{
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+.productItem{
+  display: flex;
+  align-items: center;
+ justify-content: space-between;
+  padding-bottom: 15px;
+  border-bottom: 5px dotted  #ececec;
+}
+.dotted-1{
+  border-bottom: 5px dotted  #ececec;
+}
+.productCheckoutDesc{
+  display: flex;
+  flex-direction: column;
+}
+.productCheckoutDesc > p{
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+.productCheckoutDesc > span{
+  font-weight: 500;
+}
+.iconCheckout{
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+.btnCheckout{
+  background-color: #f3da0a;
+  font-family: "Fredoka One", cursive;
+  width: 100%;
+  margin-top: 25px;
+}
+.btnContinue{
+  font-family: "Fredoka One", cursive;
+  width: 100%;
+  margin-top: 25px;
+}
+/* My Orders */
+.ordersContent{
+display: flex;
+flex-direction: column;
+row-gap: 2rem;
+  
+}
+.box-shadow-1{
+  box-shadow: 0 1px 6px 0 var(--color-shadow,rgba(49,53,59,0.12));
+  
+}
+.productOrders {
+  padding: 20px ;
+  padding-bottom: 15px;
+  border-radius: 20px;
+}
+/* My Profile */
+.myProfile{
+  max-width: 768px;
+  padding: 20px;
+}
